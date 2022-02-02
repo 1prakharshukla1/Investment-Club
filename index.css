@@ -1,0 +1,342 @@
+/*Restyling for dark theme*/
+/*
+Background: 212121
+Content: 323232
+Content-Primary: 0AAE59 = RGB(10, 174, 89)
+Hover-state-primary: (34, 194, 109) = #1ec26d
+Hover-link: RBG(5, 164, 79) = #05A44F
+Content-Secondary: 14ffec
+text: ffffff
+*/
+html, body{
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #212121;
+  color: white;
+  /*Enable scrollspy*/
+  position: relative;
+  overflow: auto;
+}
+
+.bg-dark {
+  background-color: #323232;
+}
+
+.bg-primary {
+  background-color: #0AAE59;
+}
+
+.bg-secondary {
+  background-color: #14ffec;
+}
+
+.mb-10 {
+  margin-bottom: 10rem;
+}
+
+.mt-7 {
+  margin-top: 7rem;
+}
+
+.green-top {
+  border-length: 5rem;
+  border-top: 2px solid rgba(10, 174, 80);
+}
+
+.dark {
+  background-color: #212121;
+}
+
+
+/*Restyling Elements*/
+nav {
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  z-index: 2000;
+}
+
+hr {
+  border-top-color: rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  background-color: #323232;
+}
+
+/*Restyling Navbar*/
+#navbar {
+  border-bottom: solid 2px rgba(0, 0, 0, 0.2);
+  padding: 12px 24px 12px 24px;
+  box-sizing: margin-box;
+  max-width: calc(100vw);
+}
+
+/* Resytling jumbotron */
+.jumbotron {
+  height: calc(100vh - 56px);
+  max-height: 980px;
+  /*Resetting jumbotron for sticky navbar*/
+  margin-top: 56px;
+  margin: 56px 0px 0px 0px;
+}
+
+.jumbotron img {
+  position: absolute;
+  height: calc(100vh - 56px);
+  width: 100%;
+  object-fit: none;
+  z-index: -1;
+  border-radius: 5px;
+}
+
+.grey-overlay {
+  background-color: rgba(50, 50, 50, 0.5);
+  z-index: 1;
+}
+
+.override-overlay {
+  z-index: 2;
+}
+
+/*Restyle table*/
+.table thead th {
+  border-bottom-color: rgb(0, 0, 0, 0.2);
+  border-top-color: rgb(0, 0, 0, 0.2);
+}
+
+.table-dark td, .table th {
+  border-color: rgb(0, 0, 0, 0.2);
+}
+
+
+
+/*Resetting row*/
+.row {
+  justify-content: space-around;
+}
+
+.row-advertise {
+
+}
+
+/*Card-advertise*/
+.row-advertise .col-lg-3:hover {
+  cursor: pointer;
+}
+
+.row-advertise .col-lg-3 .card {
+  background-color: #212121;
+
+
+}
+
+.row-advertise .col-lg-3 .card:hover {
+  transition: 250ms;
+  background-color: #323232;
+  box-shadow: 0 0.2rem 0.4rem rgba(0,0,0,.19);
+}
+
+/*Restyling green card icon*/
+.green-card-icon {
+  color: #0AAE59;
+  font-size: 3rem;
+}
+
+
+
+/*Overriding body/bootstrap*/
+.border-dark .card-header {
+  color: #323232;
+}
+
+.card {
+  padding: 0;
+}
+
+.navbar-dark {
+  /*!important for override*/
+  background-color: #212121 !important;
+}
+
+/*Board Page*/
+.board .row img {
+  /*Change width and height for mobile*/
+  width: 300px;
+  height: 300px;
+  margin-bottom: 0.5rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.board .row h2 {
+  margin-bottom: 0.25rem;
+}
+
+.board .row .green-bottom {
+  border-bottom: 2px solid rgb(10, 174, 89);
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.board .row .col-lg-4 img {
+  border-radius: 5%;
+}
+
+/*Fixiing up the accordion*/
+.FAQs #accordion .card .card-body {
+  color: black;
+}
+
+.FAQs #accordion .card {
+  margin-bottom: 1rem;
+}
+
+/*BME FBLA*/
+.bmefbla .d-flex {
+  color: black;
+}
+
+.bmefbla .d-flex .bmefbla-circle {
+  background-color: #F7F7F7;
+  width: 290px;
+  height: 290px;
+  border: solid 3px rgba(0, 0, 0, 0.125);
+  border-radius: 50%;
+  color: black;
+  box-shadow: 0 0.2rem 0.4rem rgba(0,0,0,.19);
+}
+
+.bmefbla .d-flex .bmefbla-circle:hover > img {
+
+}
+
+.bmefbla .flex-column .d-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.bmefbla .d-flex .bmefbla-circle h1 {
+  font-size: 2rem;
+}
+
+.bmefbla .d-flex .bmefbla-circle img {
+  width: 100px;
+  height: 100px;
+}
+
+.bmefbla .d-flex .bmefbla-circle img:hover {
+  transition: 250ms;
+  transform: scale(1.05);
+}
+
+.bmefbla .d-flex .bmefbla-circle p {
+}
+
+.bmefbla .d-flex .fundraiser {
+  background-color: #F7F7F7;
+  width: 290px;
+  height: 290px;
+  border: solid 3px rgba(0, 0, 0, 0.125);
+  border-radius: 50%;
+  box-shadow: 0 0.2rem 0.4rem rgba(0,0,0,.19);
+  margin-top: 2rem;
+}
+
+.bmefbla .flex-column {
+}
+
+.bmefbla .fundraiser .d-flex:nth-child(1) {
+  margin-right: 0.5rem;
+}
+
+
+/*footer*/
+.footer .container h2 {
+  padding-top: 0.5rem;
+}
+
+.footer .container .social i {
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+}
+.footer .container .social i {
+  font-size: 2rem;
+  padding: 1rem;
+  background-color: #ffffff;
+}
+
+.footer .container .social .fa-instagram {
+  /*Making border square*/
+  padding: 16px 18px 16px 18px;
+}
+
+.footer .container .social i:hover {
+  transition: 250ms;
+  background-color: #0AAE59;
+  border-color: #0AAE59;
+  color: #ffffff;
+}
+
+.footer .dark {
+  padding: 16px 0px 0px 0px;
+}
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 992px) {
+  #navbar .nav {
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .bmefbla .d-flex .bmefbla-circle {
+    background-color: #F7F7F7;
+    width: 550px;
+    height: 550px;
+    border: solid 3px rgba(0, 0, 0, 0.125);
+    border-radius: 50%;
+    color: black;
+    box-shadow: 0 0.2rem 0.4rem rgba(0,0,0,.19);
+    align-self: center;
+  }
+
+  .bmefbla .d-flex .bmefbla-circle .mx-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+
+  .bmefbla .flex-column .d-flex {
+    flex-direction: row;
+  }
+
+  .bmefbla .d-flex .bmefbla-circle h1 {
+    font-size: 3.5rem;
+  }
+
+  .bmefbla .d-flex .bmefbla-circle img {
+    width: 275px;
+    height: 275px;
+  }
+
+  .bmefbla .flex-column .d-flex .d-flex {
+    height: 375px;
+    width: 375px;
+  }
+
+  .bmefbla .flex-column .d-flex .d-flex:nth-child(2) {
+    margin-left: auto;
+  }
+
+
+}
